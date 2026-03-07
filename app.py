@@ -18,7 +18,7 @@ import shutil
 TEXTS = {
     "zh": {
         "title": "東華大學 GPA 計算機",
-        "desc": "本工具自動擷取校務系統資料，僅供個人參考不能作為成績證明。\n\n此外每所學校的成績計算方式會有差異，仍須以要申請的校系公告為準。",
+        "desc": "本工具自動擷取校務系統資料，僅供個人參考不能作為成績證明。\n\n此外每所學校的成績計算方式會有差異，仍須以要申請的校系公告為準。\n\n問題回報表單：https://forms.gle/tidiWbmgdaQY3rCm6",
         "login_header": "系統登入",
         "user_id": "學號",
         "user_pw": "密碼",
@@ -54,7 +54,7 @@ TEXTS = {
     },
     "en": {
         "title": "NDHU GPA Calculator",
-        "desc": "This tool automatically retrieves data from the university system for personal reference only and cannot be used as an official transcript.\n\nGrading scales may vary by institution; please refer to the official announcements of the target university.",
+        "desc": "This tool automatically retrieves data from the university system for personal reference only and cannot be used as an official transcript.\n\nGrading scales may vary by institution; please refer to the official announcements of the target university. \n\nIssue reporting form: https://forms.gle/tidiWbmgdaQY3rCm6",
         "login_header": "System Login",
         "user_id": "Student ID",
         "user_pw": "Password",
