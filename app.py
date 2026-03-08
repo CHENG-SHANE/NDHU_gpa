@@ -298,7 +298,7 @@ with col_title:
 with col_logout:
     if has_data:
         st.markdown('<div class="desktop-spacer"></div>', unsafe_allow_html=True)
-        if st.button(T["logout_btn"], use_container_width=True, type="primary"):
+        if st.button(T["logout_btn"], width="stretch", type="primary"):
             del st.session_state.final_parsed_rows
             st.session_state.captcha_bytes = None
             if 'input_pw' in st.session_state: del st.session_state['input_pw']
@@ -341,11 +341,11 @@ if not has_data:
     
     col_zh, col_en = st.columns(2)
     with col_zh:
-        if st.button("中文", use_container_width=True, disabled=(st.session_state.lang == 'zh')):
+        if st.button("中文", width="stretch", disabled=(st.session_state.lang == 'zh')):
             st.session_state.lang = 'zh'
             st.rerun()
     with col_en:
-        if st.button("English", use_container_width=True, disabled=(st.session_state.lang == 'en')):
+        if st.button("English", width="stretch", disabled=(st.session_state.lang == 'en')):
             st.session_state.lang = 'en'
             st.rerun()
             
@@ -541,7 +541,7 @@ if has_data:
             
         df = pd.DataFrame(df_display_data, columns=[T["col_term"], T["col_name"], T["col_req"], T["col_credit"], T["col_grade"]])
         df.index += 1 
-        st.dataframe(df, use_container_width=True, height=400)
+        st.dataframe(df, width="stretch", height=400)
 
 st.markdown("---")
 st.caption(T["privacy"])
